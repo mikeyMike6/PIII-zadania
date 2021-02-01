@@ -23,8 +23,7 @@ Zabezpiecz program przed podaniem przez użytkownika błędnych danych
         {
             while (true)
             {
-                double a, b, c;
-                var delta = WyznaczDelte(out a, out b, out c);
+                var delta = WyznaczDelte(out double a, out double b, out double c);
                 MiejscaZerowe miejscaZerowe;
                 miejscaZerowe = IleMiejscZerowych(delta);
                 WybierzWynik(a, b, c, delta, miejscaZerowe);
