@@ -93,14 +93,14 @@ Zabezpiecz program przed podaniem przez użytkownika błędnych danych
         private static void ObliczJednoMiejsceZerowe
             (double a, double b, out double x1)
         {
-            x1 = -b / 2 * a;
+            x1 = -b / (2 * a);
         }
 
         private static void ObliczDwaMiejscaZerowe
             (double a, double b, double delta, out double x1, out double x2)
         {
-            x1 = (-b - Math.Sqrt(delta)) / 2 * a;
-            x2 = (-b + Math.Sqrt(delta)) / 2 * a;
+            x1 = (-b - Math.Sqrt(delta)) / (2 * a);
+            x2 = (-b + Math.Sqrt(delta)) / (2 * a);
         }
 
         static double WyznaczDelte(out double a, out double b, out double c)
